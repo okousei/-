@@ -8,35 +8,26 @@
 <title>佐能運輸有限会社
 <link rel="icon" href="icon.png">
 <style>
-/* 全体の設定 */
-/* 1. 画面全体の隙間を完全にゼロにする */
+/* ブラウザが勝手に作る隙間をすべてゼロにする魔法のコード */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body, html {
+body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* 横揺れ防止 */
 }
 
-/* 2. navbar の設定を確認 */
+/* バーの設定も念のため「左上ピッタリ」に固定 */
 .navbar {
     position: fixed;
-    top: 0;
-    left: 0; /* 左端にピタッとくっつける */
+    top: 0;   /* 上端ピッタリ */
+    left: 0;  /* 左端ピッタリ */
     width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #378be6;
-    padding: 0 0px; /* バーの内側の余白 */
-    z-index: 1000;
+    /* ほか、背景色や高さの設定は今のままでOK */
 }
-
 /* ボタンのデザイン */
 .header-link {
     color: white;
@@ -145,5 +136,6 @@ flex-direction: column;
 </main>
 
 </body>
+
 
 
