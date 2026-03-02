@@ -30,6 +30,19 @@ body {
     box-sizing: border-box;
     /* ほか、背景色や高さの設定は今のままでOK */
 }
+
+/* 3. トラック画像の設定（あなたが解決したz-index: 2） */
+.top-view {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url("bus.png"); /* GitHub上の名前に合わせて修正 */
+    background-size: cover;
+    background-position: center;
+    z-index: 2; /* 以前解決した設定を維持 */
+}
 /* ボタンのデザイン */
 .header-link {
     color: white;
@@ -138,6 +151,7 @@ flex-direction: column;
 </main>
 
 </body>
+
 
 
 
